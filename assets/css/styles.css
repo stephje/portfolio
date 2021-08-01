@@ -1,0 +1,80 @@
+/* Root styles */
+
+:root {
+    --dark: #000000;
+    --light: #ffffff;
+    --accent: #d3744b;
+    --background: #d9d9d9;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Body Styles */
+
+body {
+    background-color: var(--background);
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Header Styles */
+
+header, footer {
+    background-color: var(--light);
+    padding: 16px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    margin-right: 16px;
+    display: flex;
+    align-items: center;
+}
+
+li {
+    padding: 0px;
+    margin: 0px;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+h1 {
+    margin: 0px;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+a {
+    color: var(--dark);
+}
+
+/* Main styles */
+
+main {
+    height: 100%;
+}
+
+/* Hero Display */
+
+#heroh1 {
+    border: solid;
+    background-color: var(--light);
+    width: 250px;
+    text-align: center;
+}
+
+/* Footer Styles */
+
