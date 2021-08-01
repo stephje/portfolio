@@ -2,9 +2,11 @@
 
 :root {
     --dark: #000000;
+    --coffee: #291F1E;
     --light: #ffffff;
     --accent: #d3744b;
-    --background: #d9d9d9;
+    --background: #e6dfdb;
+    --umber: #6D5F56;
 }
 
 .center {
@@ -17,6 +19,7 @@
 
 body {
     background-color: var(--background);
+    color: var(--dark);
     padding: 0px;
     margin: 0px;
     font-family: 'Open Sans', sans-serif;
@@ -24,9 +27,14 @@ body {
 
 /* Header Styles */
 
+header {
+    position: fixed;
+}
+
 header, footer {
+    width: 100vw;
     background-color: var(--light);
-    padding: 16px;
+    padding: 8px;
 }
 
 nav {
@@ -55,10 +63,12 @@ h1 {
     margin: 0px;
     margin-left: 16px;
     margin-right: 16px;
+    text-align: center;
 }
 
 a {
     color: var(--dark);
+    text-decoration: none;
 }
 
 /* Main styles */
@@ -67,13 +77,54 @@ main {
     height: 100%;
 }
 
-/* Hero Display */
+/* Hero styles */
 
-#heroh1 {
+#hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../images/ocean.jpg");
+    background-size: cover;
+    height: 100vh;
+}
+
+#hero-h1 {
     border: solid;
     background-color: var(--light);
-    width: 250px;
     text-align: center;
+    margin: 16px;
+}
+
+/* About styles */
+
+#about {
+    height: 100vh;
+    background-color: var(--background);
+}
+
+#about-content {
+    justify-content: space-evenly;
+}
+
+#about-text {
+    max-width: 50vw;
+    border: solid;
+    background-color: var(--light);
+    text-align: center;
+    margin: 16px;
+}
+
+img {
+    max-width: 50%;
+    margin: 16px;
+}
+
+
+/* Projects styles */
+
+#projects {
+    height: 100vh;
+    background-color: var(--light);
 }
 
 /* Footer Styles */
