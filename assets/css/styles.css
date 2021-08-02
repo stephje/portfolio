@@ -1,14 +1,16 @@
 /* Root styles */
 
 :root {
+    scroll-behavior: smooth;
     --dark: #000000;
-    --coffee: #291F1E;
     --light: #ffffff;
-    --accent: #d3744b;
     --background: #e6dfdb;
-    --umber: #6D5F56;
     --background2: #DDD3D0;
+    --coffee: #291F1E;
+    --umber: #6D5F56;
 }
+
+/* Flex Styles */
 
 .center {
     display: flex;
@@ -19,8 +21,7 @@
 /* Body Styles */
 
 body {
-    background-color: var(--background);
-    color: var(--dark);
+    color: var(--coffee);
     padding: 0px;
     margin: 0px;
     font-family: 'Open Sans', sans-serif;
@@ -30,7 +31,10 @@ body {
 
 header {
     position: fixed;
+    z-index: 2;
 }
+
+/* Header AND Footer */
 
 header, footer {
     width: 100vw;
@@ -38,13 +42,15 @@ header, footer {
     padding: 8px;
 }
 
+/* Nav styles */
+
 nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-ul {
+nav ul {
     list-style-type: none;
     padding: 0px;
     margin: 0px;
@@ -53,12 +59,14 @@ ul {
     align-items: center;
 }
 
-li {
+nav li {
     padding: 0px;
     margin: 0px;
     margin-left: 16px;
     margin-right: 16px;
 }
+
+/* Heading and Anchor Styles */
 
 h1 {
     margin: 0px;
@@ -72,11 +80,16 @@ a {
     text-decoration: none;
 }
 
-/* Main styles */
-
-main {
-    height: 100%;
+.text-box {
+    max-width: 50vw;
+    border: solid;
+    background-color: var(--light);
+    /* text-align: center; */
+    margin: 16px;
+    padding: 16px;
 }
+
+/* Section styles */
 
 .section {
     height: 100vh;
@@ -85,18 +98,12 @@ main {
 /* Hero styles */
 
 #hero {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-image: url("../images/ocean.jpg");
     background-size: cover;
 }
 
-#hero-h1 {
-    border: solid;
-    background-color: var(--light);
+#hero h1 {
     text-align: center;
-    margin: 16px;
     font-size: 4em;
 }
 
@@ -110,7 +117,6 @@ main {
 }
 
 #about {
-    height: 100vh;
     background-color: var(--background);
 }
 
@@ -119,26 +125,13 @@ main {
     height: 50vh;
 }
 
-#about-text {
-    max-width: 50vw;
-    border: solid;
-    background-color: var(--light);
-    text-align: center;
-    margin: 16px;
-}
-
-img {
+#profile-pic {
     max-width: 50%;
     margin: 16px;
 }
 
-
 /* Projects styles */
 
 #projects {
-    height: 100vh;
     background-color: var(--background2);
 }
-
-/* Footer Styles */
-
