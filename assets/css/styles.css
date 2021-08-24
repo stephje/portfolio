@@ -10,6 +10,14 @@
     --umber: #6D5F56;
 }
 
+.shadow {
+    box-shadow:
+    0 6.7px 5.3px rgba(0, 0, 0, 0.1),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.06),
+    0 100px 80px rgba(0, 0, 0, 0.04)
+  ;
+}
+
 /* Flex Styles */
 
 .center {
@@ -82,9 +90,7 @@ a {
 
 .text-box {
     max-width: 50vw;
-    border: solid;
     background-color: var(--light);
-    /* text-align: center; */
     margin: 16px;
     padding: 16px;
 }
@@ -92,7 +98,7 @@ a {
 /* Section styles */
 
 .section {
-    height: 100vh;
+    min-height: 100vh;
 }
 
 /* Hero styles */
@@ -134,13 +140,14 @@ a {
 
 .project-section-heading {
     width: 100%;
-    padding-top: 1vh;
-    padding-bottom: 1vh;
+    padding-top: 2%;
+    padding-bottom: 2%;
     font-size: 4em;
 }
 
 #projects {
     background-color: var(--background2);
+    padding-bottom: 2%;
 }
 
 /* Grid styles */
@@ -152,8 +159,8 @@ a {
     grid-template-areas: 
       "one one two three"
       "one one four five";
-    column-gap: 8px;
-    row-gap: 8px;
+    column-gap: 16px;
+    row-gap: 16px;
     justify-items: center;
     align-items: center;
     max-width: 90vw;
@@ -196,6 +203,10 @@ a {
 
 .item p {
     margin: 8px;
+}
+
+.item i {
+    color: #009688;
 }
 
 /* Footer Styles */
