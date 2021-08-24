@@ -10,11 +10,13 @@
   --umber: #6d5f56;
 }
 
-.shadow {
-  box-shadow: 
-    0 6.7px 5.3px rgba(0, 0, 0, 0.1),
-    0 22.3px 17.9px rgba(0, 0, 0, 0.06), 
-    0 100px 80px rgba(0, 0, 0, 0.04);
+/* Body Styles */
+
+body {
+  color: var(--coffee);
+  padding: 0px;
+  margin: 0px;
+  font-family: "Open Sans", sans-serif;
 }
 
 /* Flex Styles */
@@ -25,13 +27,13 @@
   align-items: center;
 }
 
-/* Body Styles */
+/* General Styles */
 
-body {
-  color: var(--coffee);
-  padding: 0px;
-  margin: 0px;
-  font-family: "Open Sans", sans-serif;
+.shadow {
+  box-shadow: 
+    0 6.7px 5.3px rgba(0, 0, 0, 0.1),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.06), 
+    0 100px 80px rgba(0, 0, 0, 0.04);
 }
 
 /* Header Styles */
@@ -41,7 +43,7 @@ header {
   z-index: 2;
 }
 
-/* Header AND Footer */
+/* Header AND Footer Styles */
 
 header,
 footer {
@@ -50,7 +52,7 @@ footer {
   padding: 8px;
 }
 
-/* Nav styles */
+/* Nav Styles */
 
 nav {
   display: flex;
@@ -74,33 +76,6 @@ nav li {
   margin-right: 16px;
 }
 
-/* Heading and Anchor Styles */
-
-h1 {
-  margin: 0px;
-  margin-left: 16px;
-  margin-right: 16px;
-  text-align: center;
-}
-
-a {
-  color: var(--dark);
-  text-decoration: none;
-}
-
-.text-box {
-  max-width: 50vw;
-  background-color: var(--light);
-  margin: 16px;
-  padding: 16px;
-}
-
-/* Section styles */
-
-.section {
-  min-height: 100vh;
-}
-
 /* Hero styles */
 
 #hero {
@@ -111,6 +86,37 @@ a {
 #hero h1 {
   text-align: center;
   font-size: 4em;
+}
+
+/* Heading and Anchor Styles */
+
+h1 {
+  margin: 0px;
+  margin-left: 16px;
+  margin-right: 16px;
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+a {
+  color: var(--dark);
+  text-decoration: none;
+}
+
+/* Section styles */
+
+.section {
+  min-height: 100vh;
+}
+
+.text-box {
+  max-width: 50vw;
+  background-color: var(--light);
+  margin: 16px;
+  padding: 16px;
 }
 
 /* About styles */
@@ -140,8 +146,8 @@ a {
 
 .project-section-heading {
   width: 100%;
-  padding-top: 10vh;
-  padding-bottom: 2%;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
   font-size: 4em;
 }
 
@@ -161,8 +167,6 @@ a {
     "one one four five";
   column-gap: 16px;
   row-gap: 16px;
-  justify-items: center;
-  align-items: center;
   max-width: 90vw;
   margin: auto;
 }
