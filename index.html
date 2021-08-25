@@ -9,37 +9,46 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-
-    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" media='screen and (max-width: 699px)' href="./assets/css/mobilestyles.css" />
+    <link rel="stylesheet" media='screen and (min-width: 700px)' href="./assets/css/styles.css" />
 </head>
 
 <body>
     <header>
         <nav>
-            <h1>Stephanie Jenkins</h1>
-            <ul>
-                <li><a href="#hero">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li>
-                    <a href="https://github.com/stephje"><i class="contact-icon fab fa-github fa-2x"></i></a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/stephje/"><i
-                            class="contact-icon fab fa-linkedin fa-2x"></i></a>
-                </li>
-                <li>
-                    <a href="mailto:s.jenkins3018@gmail.com"><i class="
-                                    contact-icon
-                                    fas
-                                    fa-envelope-square fa-2x
-                                "></i></a>
-                </li>
-                <li>
-                    <a class="nav-menu-item" href="./assets/files/Resume.pdf" download="Resume.pdf"><i class="fas fa-file-download fa-2x download-icon"></i></a>
-                </li>
-            </ul>
+            <div class="menu-and-icon">
+                <h1>Stephanie Jenkins</h1>
+                <i id="menuIcon" class="fas fa-bars fa-lg"></i>
+            </div>
+            <div class="nav-list">
+                <ul id="section-headings">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                </ul>
+                <ul id="nav-icons">
+                    <li>
+                        <a href="https://github.com/stephje"><i class="contact-icon fab fa-github fa-2x"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/stephje/"><i class="contact-icon fab fa-linkedin fa-2x"></i></a>
+                    </li>
+                    <li>
+                        <a href="mailto:s.jenkins3018@gmail.com"><i class="contact-icon fas fa-envelope-square fa-2x"></i></a>
+                    </li>
+                    <li>
+                        <a class="nav-menu-item" href="./assets/files/Resume.pdf" download="Resume.pdf"><i class="fas fa-file-download fa-2x download-icon"></i></a>
+                    </li>
+                </ul>
+            </div>
         </nav>
+        <!-- Mobile Menu -->
+        <div id="menu">
+            <a href="https://github.com/stephje"><i class="contact-icon fab fa-github fa-2x"></i> GitHub</a>
+            <a href="https://www.linkedin.com/in/stephje/"><i class="contact-icon fab fa-linkedin fa-2x"></i> LinkedIn</a>
+            <a href="mailto:s.jenkins3018@gmail.com"><i class="contact-icon fas fa-envelope-square fa-2x"></i> Email</a>
+            <a class="nav-menu-item" href="./assets/files/Resume.pdf" download="Resume.pdf"><i class="fas fa-file-download fa-2x download-icon"></i> Resume</a>
+        </div>
     </header>
 
     <main>
@@ -83,10 +92,13 @@
             <h1 class="project-section-heading">Projects</h1>
             <div class="container">
                 <div class="item item-a shadow">
-                    <a href="https://shift-assist.herokuapp.com/"><img class="project-image" src="./assets/images/shiftassist.png" alt="webpage screenshot"></a>
+                    <a href="https://shift-assist.herokuapp.com/"><img class="project-image"
+                            src="./assets/images/shiftassist.png" alt="webpage screenshot"></a>
                     <div class="item-description">
-                        <h3><a href="https://github.com/stephje/shift-assist"><i class="fab fa-github fa-lg"></i></a> ShiftAssist</h3>
-                        <p>A helpful tool that significantly reduces the time and effort required to construct a volunteer roster.</p>
+                        <h3><a href="https://github.com/stephje/shift-assist"><i class="fab fa-github fa-lg"></i></a>
+                            ShiftAssist</h3>
+                        <p>A helpful tool that significantly reduces the time and effort required to construct a
+                            volunteer roster.</p>
                         <ul>
                             <li>Accepts Volunteer registrations</li>
                             <li>Displays Volunteer and shift data</li>
@@ -95,31 +107,40 @@
                     </div>
                 </div>
                 <div class="item item-b shadow">
-                    <a href="https://local-discovery.herokuapp.com/"><img class="project-image" src="./assets/images/local-discovery.png" alt="webpage screenshot"></a>
+                    <a href="https://local-discovery.herokuapp.com/"><img class="project-image"
+                            src="./assets/images/local-discovery.png" alt="webpage screenshot"></a>
                     <div class="item-description">
-                        <h3><a href="https://github.com/stephje/local-discovery-v2"><i class="fab fa-github fa-lg"></i></a> Local Discovery</h3>
+                        <h3><a href="https://github.com/stephje/local-discovery-v2"><i
+                                    class="fab fa-github fa-lg"></i></a> Local Discovery</h3>
                         <p>A treasure-hunt style activity trail based on geolocation data.</p>
                     </div>
                 </div>
                 <div class="item item-c shadow">
-                    <a href="https://stephje.github.io/weather-dashboard/"><img class="project-image" src="./assets/images/weather-dashboard.png" alt="webpage screenshot"></a>
+                    <a href="https://stephje.github.io/weather-dashboard/"><img class="project-image"
+                            src="./assets/images/weather-dashboard.png" alt="webpage screenshot"></a>
                     <div class="item-description">
-                        <h3><a href="https://github.com/stephje/weather-dashboard"><i class="fab fa-github fa-lg"></i></a> Weather Dashboard</h3>
+                        <h3><a href="https://github.com/stephje/weather-dashboard"><i
+                                    class="fab fa-github fa-lg"></i></a> Weather Dashboard</h3>
                         <p>A weather dashboard that utilises the OpenWeather One Call API.</p>
                     </div>
                 </div>
                 <div class="item item-d shadow">
-                    <a href="https://stephje.github.io/work-day-scheduler/"><img class="project-image" src="./assets/images/work-day-scheduler.png" alt="webpage screenshot"></a>
+                    <a href="https://stephje.github.io/work-day-scheduler/"><img class="project-image"
+                            src="./assets/images/work-day-scheduler.png" alt="webpage screenshot"></a>
                     <div class="item-description">
-                        <h3><a href="https://github.com/stephje/work-day-scheduler"><i class="fab fa-github fa-lg"></i></a> Work Day Scheduler</h3>
+                        <h3><a href="https://github.com/stephje/work-day-scheduler"><i
+                                    class="fab fa-github fa-lg"></i></a> Work Day Scheduler</h3>
                         <p>A simple calendar application that allows users to save events for each hour of the day.</p>
                     </div>
                 </div>
                 <div class="item item-e shadow">
-                    <a href="https://stephje.github.io/javascript-quiz/"><img class="project-image" src="./assets/images/javascript-quiz.png" alt="webpage screenshot"></a>
+                    <a href="https://stephje.github.io/javascript-quiz/"><img class="project-image"
+                            src="./assets/images/javascript-quiz.png" alt="webpage screenshot"></a>
                     <div class="item-description">
-                        <h3><a href="https://github.com/stephje/javascript-quiz"><i class="fab fa-github fa-lg"></i></a> Javascript Quiz</h3>
-                        <p>An interactive, timed JavaScript quiz that stores a high score leaderboard in local storage.</p>
+                        <h3><a href="https://github.com/stephje/javascript-quiz"><i class="fab fa-github fa-lg"></i></a>
+                            Javascript Quiz</h3>
+                        <p>An interactive, timed JavaScript quiz that stores a high score leaderboard in local storage.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -129,6 +150,7 @@
             <p>Copyright © Stephanie Jenkins 2021</p>
         </footer>
     </main>
+    <script src="./assets/js/script.js"></script>
 </body>
 
 </html>

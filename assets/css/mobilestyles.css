@@ -8,7 +8,6 @@
   --background2: #ddd3d0;
   --coffee: #291f1e;
   --umber: #6d5f56;
-  box-sizing: border-box;
 }
 
 /* Body Styles */
@@ -19,13 +18,14 @@ body {
   margin: 0px;
   font-family: "Open Sans", sans-serif;
   box-sizing: border-box;
-  overflow-x: hidden; 
+  overflow-x: hidden;
 }
 
 /* Flex Styles */
 
 .center {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -48,17 +48,29 @@ header {
 
 header,
 footer {
-  width: 100%;
-  background-color: var(--light);
-  padding: 8px;
+  width: 100vw;
+  background-color: var(--light);  
+}
+
+footer {
+    padding: 8px;
 }
 
 /* Nav Styles */
 
+.menu-and-icon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
 nav {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 8px;
 }
 
 nav ul {
@@ -77,16 +89,32 @@ nav li {
 }
 
 .nav-list {
-  display: flex;
-  margin-right: 16px;
-}
+    margin-right: 8px;
+  }
 
-#menuIcon {
+#nav-icons {
   display: none;
 }
 
 #menu {
- display: none;   
+    color: var(--light);
+    background-color: var(--coffee);
+    width: 100%;
+    margin: 0px;
+    padding: 8px;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#menu a {
+    color: var(--light);
+}
+
+#menu i {
+    margin: 8px;
+    margin-right: 16px;
+    width: 24px;
 }
 
 /* Hero styles */
@@ -105,7 +133,7 @@ nav li {
 
 h1 {
   margin: 0px;
-  margin-left: 16px;
+  margin-left: 8px;
   margin-right: 16px;
   text-align: center;
 }
@@ -126,7 +154,6 @@ a {
 }
 
 .text-box {
-  max-width: 50vw;
   background-color: var(--light);
   margin: 16px;
   padding: 16px;
@@ -136,8 +163,7 @@ a {
 
 .about-section-heading {
   width: 100%;
-  padding-top: 10vh;
-  padding-bottom: 10vh;
+  padding-top: 5vh;
   font-size: 4em;
 }
 
@@ -147,7 +173,6 @@ a {
 
 #about-content {
   justify-content: space-evenly;
-  height: 50vh;
 }
 
 #profile-pic {
@@ -171,45 +196,14 @@ a {
 
 /* Grid styles */
 
-.container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: auto;
-  grid-template-areas:
-    "one one two three"
-    "one one four five";
-  column-gap: 16px;
-  row-gap: 16px;
-  max-width: 90vw;
-  margin: auto;
-}
-
 .item {
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  margin: auto;
+  /* height: 100%; */
   background-color: var(--light);
   display: flex;
   flex-direction: column;
-}
-
-.item-a {
-  grid-area: one;
-}
-
-.item-b {
-  grid-area: two;
-}
-
-.item-c {
-  grid-area: three;
-}
-
-.item-d {
-  grid-area: four;
-}
-
-.item-e {
-  grid-area: five;
+  margin-bottom: 16px;
 }
 
 .project-image {
