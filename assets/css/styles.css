@@ -102,7 +102,7 @@ h3 {
 }
 
 a {
-  color: var(--dark);
+  color: var(--coffee);
   text-decoration: none;
 }
 
@@ -177,8 +177,6 @@ a {
   background-color: var(--light);
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
 }
 
 .item-a {
@@ -205,12 +203,16 @@ a {
   max-width: 100%;
 }
 
-.item p {
-  margin: 8px;
+.item-description {
+  margin: 5%;
 }
 
 .item i {
   color: #009688;
+}
+
+.item-b img, .item-d img {
+  border-bottom: solid 1px lightgray;
 }
 
 /* Footer Styles */
